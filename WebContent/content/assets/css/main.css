@@ -1,0 +1,322 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+html{
+	color:#000;
+	overflow-y:scoll;
+	overflow:-moz-scrollbars-vertical;
+}
+/*整体界面*/
+#header {
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(31,31,31);
+	color: white;
+	z-index: 999;
+}
+#header p {
+	width: 100px;
+	margin-right: 24px;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: right;
+}
+#header div {
+	width: 60px;
+	height: 30px;
+	float: right;
+	margin-top: 8px;
+	border:2px solid red;
+	color: white;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 10px;
+}
+#header .btnLoginOut {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 8px;
+	margin-right: 10px;
+	outline: none;
+}
+/*标记相关*/
+.div{
+	position:absolute;
+	border:1px dashed blue;
+	width:0px; 
+	height:0px;
+	left:0px; 
+	top:0px; 
+	overflow:hidden;
+}
+.retc{
+	position:absolute; 
+	border:3px solid red; 
+	overflow:hidden;
+	background: rgba(0,0,0,0); 
+}
+.retc:hover {
+	background: rgba(0,0,255,0.3);
+}
+.retcX {
+	position:absolute; 
+	border:3px solid red; 
+	overflow:hidden;
+	background: rgba(255,0,0,0.6); 
+}
+/*右键菜单自定义*/
+.rightMouseListMenu {
+	position: absolute;
+	width: 100px;
+	background: white;
+	padding:2px;
+	border:1px solid rgb(200,200,200);
+	border-radius:5px;
+	box-shadow: 5px 5px 30px black;
+	display: none;
+	z-index:99999; 
+}
+.rightMouseList {
+	margin-top: 3px;
+	margin-bottom: 2px;
+	border-top:1px solid rgb(200,200,200);
+	width: 100%;
+	font-size: 16px;
+	color: black;
+	text-indent: 25px;
+}
+.rightMouseList:hover {
+	color: white;
+	background-color: rgb(30,100,210);
+}
+.rightMouseList:first-child {
+	border-top:none;
+}
+.form {
+	display: none;
+}
+/*登录界面*/
+.divLogin {
+	width: 600px;
+	height: 200px;
+	margin-top: 60px;
+	background-color: black;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	line-height: 200px;
+	box-shadow: 2px 2px 5px black;
+	border-radius:20px;
+}
+.divFormLogin{
+	margin-top: 60px;
+	width: 600px;
+	height: 150px;
+}
+#formLogin {
+	position: relative;
+	float: left;
+	width: 75%;
+	background: black;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	box-shadow: 2px 2px 5px black;
+	border-radius:20px;
+}
+.inputLogin {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	text-indent: 10px;
+	line-height: 32px;
+	color:white;
+	border-radius:5px;
+	border:1px solid rgb(49,49,49);
+	background-color: rgb(21,21,21);
+}
+.firstChild {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.bodyLogin {
+	background-color: rgb(30,30,30);
+}
+#btnLogin {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	float: right;
+	background-color: black;
+	color:white;
+	font-size: 32px;
+	border:none;
+	box-shadow: 2px 2px 5px black;
+	border-radius:20px;
+}
+
+/*管理员界面*/
+body.admin {
+	background-color: black;
+	overflow: auto;
+	color: white;
+}
+body.admin .contentMode {
+	overflow: auto;
+	position: absolute;
+	left: 15%;
+	width: 85%;
+	background-color: black;
+	color: white;
+	
+}
+body.admin .leftMode {
+	position: fixed;
+	width: 15%;
+	height: 100%;
+	float: left;
+	background-color: rgb(49,49,49);
+	color: white;
+	z-index: 998;
+}
+body.admin .btnLeftMode {
+	width: 70%;
+	background: rgb(31,31,31);
+	border: none;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	border-radius:5px;
+	box-shadow: 1px 1px 5px black;
+}
+body.admin table {
+	border-top:1px solid white;
+	border-left:1px solid white;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+body.admin tr.special {
+	background-color: rgb(210,60,30);
+}
+body.admin tr td {
+	border-right: 1px solid white;
+	border-bottom: 1px solid white; 
+	width: 150px;
+	height: 24px;
+	line-height: 24px;
+}
+body.admin tr td:last-child {
+	width: 50px;
+	text-align: center;
+}
+/*浮动操作面板*/
+.actionBoard {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 220px;
+	/*height: 200px;*/
+	background-color: rgb(31,31,31);
+	border-radius:10px;
+	box-shadow: 1px 1px 5px rgb(49,49,49);
+}
+.actionBoard p {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.actionBoard select {
+	background-color: rgb(49,49,49);
+	border:none;
+	margin-left: 10px;
+	width: 100px;
+}
+.actionBoard input.submit {
+	width: 40px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.actionBoard input.text {
+	color: white;
+	background-color: rgb(49,49,49);
+	border:none;
+	margin-left: 10px;
+	width: 100px;
+	line-height: 20px;
+}
+/*搜索*/
+.formSearch {
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: ;
+}
+.formSearch input.text{
+	background-color: rgb(49,49,49);
+	color: white;
+	border:2px solid rgb(31,31,31);
+	height: 20px;
+	width: 200px;
+}
+.formSearch input.submit{
+	width: 40px;
+	height: 20px;
+	margin-left: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch input.btnAllSelect {
+	margin-left: 50px;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch input.btnAllNoSelect {
+	margin-left: 5px;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch input.btnReSelect {
+	margin-left: 5px;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch select{
+	color: white;
+	border:2px solid rgb(31,31,31);
+	height: 20px;
+
+	background-color: rgb(49,49,49);
+	width: 100px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+     <class name="Picture" table="picture">
+        <id name="pid" column="pid" >
+              <generator class="uuid"/>
+        </id>
+        <property name="padd" type="string" column="padd"  />
+        <property name="pname" type="string" column="pname"  />
+        <property name="puptime" type="timestamp" column="puptime"  />
+        <property name="pmodpeo" type="string" column="pmodpeo"  />
+        <property name="pmodtime" type="timestamp" column="pmodtime"  />
+        <property name="pcheckpeo" type="string" column="pcheckpeo"  />
+        <property name="pchecktime" type="timestamp" column="pchecktime"  />
+        <property name="pok" type="string" column="pok"  />
+        <property name="pdeadline" type="timestamp" column="pdeadline"  />
+     </class>
+</hibernate-mapping>
+

@@ -1,0 +1,95 @@
+body { 
+	background-color: black;
+	color: white;
+}
+.upload_box {
+	width: 700px;
+}
+.btnDiv {
+	float: left;
+	padding: 0;
+	margin:0;
+	border:none;
+	width: 180px;
+	height: 300px;
+}
+#btnUpimg,#btnSubmit {
+	width: 180px;
+	height: 120px;
+	background-color: rgb(60,60,60);
+	color: white;
+	font-size: 28px;
+	border-radius: 10px;
+	border:none;
+	box-shadow: 0px 1px 1px 1px rgb(30,30,30);
+	outline: none;
+}
+#btnUpimg:hover,#btnSubmit:hover {
+	background-color: rgb(30,100,210);
+}
+.btnDiv p {
+	margin:0;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+.btnDiv input:first-child {
+	margin-bottom: 20px
+}
+
+#upimg {
+	display: none;
+}
+#submit {
+	display: none;
+}
+#drag{ 
+	float: right;
+	width: 500px;
+	height: 300px;
+	border: 3px dotted #333; 
+	text-align: center; 
+	line-height: 300px; 
+	color: #aaa; 
+	display: inline-block;
+}
+.drag_hover{
+	background: #FAD6F9;
+}
+.show{
+	top:20px;
+	position: relative; 
+	width: 700px;
+	clear: both;
+}
+.show .item{
+	width: 700px; 
+	height: 80px;
+	background-color: rgb(49,49,49);
+	border-bottom: 3px solid black;
+	text-align: left;
+}
+.show .item:hover{
+	background-color: rgb(30,100,210);
+}
+.show img{
+	position: absolute;
+	margin:10px;
+	max-width: 100px;
+	max-height: 60px;
+	cursor: url(./images/big.cur), auto;  
+	box-shadow: 0px 1px 1px 1px #AAA3A3;
+}
+.show img:hover{
+	box-shadow: 0px 1px 1px 2px #83ABD2;
+}
+.show p{
+	line-height: 80px;
+	width: 200px;
+	margin: 0;
+	margin-left: 120px;
+	font-size: 20px;
+}

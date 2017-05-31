@@ -1,0 +1,82 @@
+body {
+	background-color: black;
+	overflow: auto;
+	color: white;
+}
+/*用户数据*/
+.divUserDate {
+	width: 600px;
+	background-color: red;
+}
+/*搜索*/
+.formSearch {
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: ;
+}
+.formSearch input.text{
+	background-color: rgb(49,49,49);
+	color: white;
+	border:2px solid rgb(31,31,31);
+	height: 20px;
+	width: 200px;
+}
+.formSearch input.submit{
+	width: 40px;
+	height: 20px;
+	margin-left: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch input.btnAllSelect,input.btnView {
+	margin-left: 50px;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch input.btnAllNoSelect,input.btnReSelect {
+	margin-left: 5px;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background-color: rgb(49,49,49);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px black;
+}
+.formSearch select{
+	color: white;
+	border:2px solid rgb(31,31,31);
+	height: 20px;
+
+	background-color: rgb(49,49,49);
+	width: 100px;
+}
+/*表*/
+table {
+	border-top:1px solid white;
+	border-left:1px solid white;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+tr.special {
+	background-color: rgb(210,60,30);
+}
+tr td {
+	border-right: 1px solid white;
+	border-bottom: 1px solid white; 
+	width: 150px;
+	height: 24px;
+	line-height: 24px;
+}
+tr td.special {
+	width: 50px;
+	text-align: center;
+}
