@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+     <class name="Worker" table="worker">
+        <id name="id" column="id" >
+              <generator class="assigned"/>
+        </id>
+        <property name="pwd" type="string" column="pwd"  />
+        <property name="type" type="string" column="type"  />
+        <property name="wname" type="string" column="wname"  />
+     </class>
+</hibernate-mapping>
+
